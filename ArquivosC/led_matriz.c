@@ -141,6 +141,7 @@ void imprimir_num(char comando, PIO pio, uint sm){
                   break;
         case '9': desenho_pio(num9, pio, sm, 0.5, 0.6, 0.2);
                   break;
+        default: break;
     }
 }
 

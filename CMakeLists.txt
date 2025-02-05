@@ -51,6 +51,7 @@ target_sources(Interfaces_ControleSerial PRIVATE Interfaces_ControleSerial.c)
 # Add the standard library to the build
 target_link_libraries(Interfaces_ControleSerial
         hardware_pio
+        hardware_clocks
         pico_stdlib)
 
 # Add the standard include files to the build
