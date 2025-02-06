@@ -10,6 +10,6 @@ uint32_t matrix_rgb(double r, double g, double b);
 void apagar_leds(PIO pio, uint sm);
 void acender_leds(PIO pio, uint sm, double r, double g, double b);
 void desenho_pio(double *desenho, PIO pio, uint sm, double r, double g, double b);
-void imprimir_num(char comando, PIO pio, uint sm);
+void imprimir_num(char caracter, PIO pio, uint sm);
 
 #endif // LED_MATRIX_H

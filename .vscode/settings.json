@@ -44,6 +44,7 @@
         "stdlib.h": "c",
         "uart.h": "c",
         "cctype": "c",
-        "pio.h": "c"
+        "pio.h": "c",
+        "font.h": "c"
     }
 }

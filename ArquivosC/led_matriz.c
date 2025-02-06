@@ -1,4 +1,4 @@
-#include "../Bibliotecas/led_matriz.h"
+#include "Bibliotecas/led_matriz.h"
 
 // Define a matriz do número 0
 double num0[25] = {
@@ -119,8 +119,8 @@ void desenho_pio(double *desenho, PIO pio, uint sm, double r, double g, double b
     }   
 }
 
-void imprimir_num(char comando, PIO pio, uint sm){
-    switch(comando){
+void imprimir_num(char caracter, PIO pio, uint sm){
+    switch(caracter){
         case '0': desenho_pio(num0, pio, sm, 0.5, 0.6, 0.2);
                   break;
         case '1': desenho_pio(num1, pio, sm, 0.5, 0.6, 0.2);

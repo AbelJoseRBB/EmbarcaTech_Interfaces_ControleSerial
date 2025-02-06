@@ -35,7 +35,10 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Interfaces_ControleSerial Interfaces_ControleSerial.c ArquivosC/botao.c ArquivosC/led_matriz.c)
+add_executable(Interfaces_ControleSerial 
+        Interfaces_ControleSerial.c 
+        ArquivosC/led_matriz.c 
+        ArquivosC/ssd1306.c)
 
 pico_set_program_name(Interfaces_ControleSerial "Interfaces_ControleSerial")
 pico_set_program_version(Interfaces_ControleSerial "0.1")
@@ -52,6 +55,7 @@ target_sources(Interfaces_ControleSerial PRIVATE Interfaces_ControleSerial.c)
 target_link_libraries(Interfaces_ControleSerial
         hardware_pio
         hardware_clocks
+        hardware_i2c
         pico_stdlib)
 
 # Add the standard include files to the build
@@ -61,7 +65,6 @@ target_include_directories(Interfaces_ControleSerial PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(Interfaces_ControleSerial 
-        
         )
 
 pico_add_extra_outputs(Interfaces_ControleSerial)
