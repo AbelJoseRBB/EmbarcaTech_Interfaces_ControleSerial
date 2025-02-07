@@ -119,6 +119,7 @@ void desenho_pio(double *desenho, PIO pio, uint sm, double r, double g, double b
     }   
 }
 
+// Função para imprimir o número recebido 
 void imprimir_num(char caracter, PIO pio, uint sm){
     switch(caracter){
         case '0': desenho_pio(num0, pio, sm, 0.5, 0.6, 0.2);
