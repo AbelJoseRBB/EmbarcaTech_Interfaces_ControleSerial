@@ -4,7 +4,7 @@ Tarefa do EmbarcaTech com intuito de consolidar os conceitos sobre o uso de inte
 # Vídeo Explicativo
 A seguir um vídeo explicativo sobre o projeto.
 
-"link"
+https://drive.google.com/file/d/1pzeBJbwXIgJm_xCdRN_oD9uVVXwqa9bB/view?usp=sharing
 
 # Intruções
 Para executar o código em questão, deve-se possuir a extensão Wokwi Simulator instalada no Visual Studio Code ou acesso a placa BitDogLab configurada para receber informação via Seria Monitor.
